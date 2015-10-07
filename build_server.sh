@@ -2,6 +2,8 @@
 
 source './lib/main.sh'
 
+# Prevents Package Configuration requiring input
+DEBIAN_FRONTEND=noninteractive
 
 upgrade
 

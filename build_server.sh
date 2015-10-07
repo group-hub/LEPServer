@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source './lib/main/sh'
+source './lib/main.sh'
 
 
 upgrade

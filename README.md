@@ -8,7 +8,7 @@ LEPServer is based on a LEMP (Linux/Nginx/MySQL/PHP) stack but without a MySQL d
 Database
 =======
 
-LEPServer includes the MySQL PHP driver so you can still connect to a MySQL database installed on another server. In addition, the PHP Redis driver is also included.
+LEPServer includes the MySQL PHP driver so you can still connect to a MySQL database installed on another server.
 
 
 Linux
@@ -33,8 +33,4 @@ Setup the server
 
         bash build_server.sh
 
-
-Credits
-===
-
-LEPServer is loseley based on the open source LEMPress
+Credits: LEPServer is loseley based on the open source LEMPress

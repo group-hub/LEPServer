@@ -22,7 +22,7 @@ How to Use:
 
 Install Git
 
-        yes | sudo apt-get install git-core
+        sudo apt-get -y install git-core
 
 Download LEPServer
 

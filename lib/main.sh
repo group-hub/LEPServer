@@ -16,7 +16,9 @@ function install_php() {
 }
 
 function install_php_drivers {
-  sudo apt-get -y install php5-mysql php5-curl
+  sudo apt-get -y install php5-mysql php5-curl php5-mcrypt php5-cli
+  # Install Composer
+  curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 }
 
 # Configure

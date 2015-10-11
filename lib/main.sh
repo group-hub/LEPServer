@@ -3,6 +3,7 @@
 function upgrade() {
   sudo apt-get -y update
   sudo apt-get -y --force-yes upgrade
+  sudo apt-get -y install unzip
 }
 
 # Install

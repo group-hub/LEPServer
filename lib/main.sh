@@ -19,11 +19,11 @@ function install_php() {
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
   sudo apt-get --force-yes update
   sudo apt-get --force-yes upgrade
-  sudo apt-get --force-yes install php5-fpm
+  sudo apt-get --yes --force-yes install php5-fpm
 }
 
 function install_php_drivers {
-  sudo apt-get --force-yes install php5-mysql php5-curl php5-mcrypt php5-cli
+  sudo apt-get --yes --force-yes install php5-mysql php5-curl php5-mcrypt php5-cli
   # Install Composer
   curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 }

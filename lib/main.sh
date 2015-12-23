@@ -14,8 +14,8 @@ function install_nginx() {
 
 function install_php() {
   sudo touch /etc/apt/sources.list.d/ondrej-php5-5.6.list
-  echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" || sudo tee --append /etc/apt/sources.list.d/ondrej-php5-5.6.list
-  echo "deb-src http://ppa.lauanchpad.net/ondrej/php5-5.6/ubuntu trusty main" || sudo tee --append /etc/apt/sources.list.d/ondrej-php5-5.6.list
+  echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" | sudo tee --append /etc/apt/sources.list.d/ondrej-php5-5.6.list
+  echo "deb-src http://ppa.lauanchpad.net/ondrej/php5-5.6/ubuntu trusty main" | sudo tee --append /etc/apt/sources.list.d/ondrej-php5-5.6.list
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
   sudo apt-get --force-yes update
   sudo apt-get --force-yes upgrade

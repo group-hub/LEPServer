@@ -13,7 +13,7 @@ function install_nginx() {
 }
 
 function install_php() {
-  sudo apt-get --force-yes install python-software-properties
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C 
   sudo add-apt-repository -y ppa:ondrej/php5-5.6
   sudo apt-get --force-yes update
   sudo apt-get --force-yes upgrade

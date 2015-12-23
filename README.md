@@ -26,7 +26,7 @@ Install Git
 
 Download LEPServer
 
-        git clone git://github.com/whealmedia/LEPServer.git
+        git clone git://github.com/group-hub/LEPServer.git
         cd LEPServer
 
 Setup the server

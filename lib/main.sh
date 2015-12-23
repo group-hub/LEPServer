@@ -14,7 +14,7 @@ function install_nginx() {
 
 function install_php() {
   sudo apt-get --force-yes install python-software-properties
-  sudo add-apt-repository --force-yes ppa:ondrej/php5-5.6
+  sudo add-apt-repository -y ppa:ondrej/php5-5.6
   sudo apt-get --force-yes update
   sudo apt-get --force-yes upgrade
   sudo apt-get --force-yes --force install php5-fpm

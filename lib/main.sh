@@ -13,14 +13,15 @@ function install_nginx() {
 }
 
 function install_php() {
-  sudo apt-get -y update && sudo apt-get -y install python-software-properties
-  sudo add-apt-repository -y ppa:ondrej/php5-5.6
-  sudo apt-get -y update && sudo apt-get -y upgrade
-  sudo apt-get -y install php5-fpm
+  sudo apt-get --force-yes install python-software-properties
+  sudo add-apt-repository --force-yes ppa:ondrej/php5-5.6
+  sudo apt-get --force-yes update
+  sudo apt-get --force-yes upgrade
+  sudo apt-get --force-yes --force install php5-fpm
 }
 
 function install_php_drivers {
-  sudo apt-get -y install php5-mysql php5-curl php5-mcrypt php5-cli
+  sudo apt-get --force-yes install php5-mysql php5-curl php5-mcrypt php5-cli
   # Install Composer
   curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 }
